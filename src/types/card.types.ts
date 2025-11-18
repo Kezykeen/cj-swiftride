@@ -1,0 +1,20 @@
+import { cva } from "class-variance-authority";
+
+export const cardVariants = cva("flex flex-col gap-2 text-center justify-center items-center rounded-full p-[50px] shadow", {
+  variants: {
+    size: {
+      sm: "w-52",
+      md: "w-64",
+      lg: "w-80 h-80",
+    },
+    color: {
+      white: "bg-white",
+      blue: "bg-[#E8F2FF]",
+      gray: "bg-gray-900",
+    },
+  },
+  defaultVariants: {
+    size: "md",
+    color: "white",
+  },
+});

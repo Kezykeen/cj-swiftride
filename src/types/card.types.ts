@@ -5,7 +5,7 @@ export const cardVariants = cva("flex flex-col gap-2 text-center justify-center 
     size: {
       sm: "w-52",
       md: "w-64",
-      lg: "w-80 h-80",
+      lg: "w-[350px] h-[350px]",
     },
     color: {
       white: "bg-white",

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const contact = [
@@ -24,47 +25,53 @@ const contact = [
 ]
 
 const Footer = () => {
+  const [showMore, setShowMore] = useState(false);
+
+
   return (
     <div>
-      <footer className="flex flex-col gap-10 bg-[#072C59] container-padding text-white font-plus-jakarta">
+      <footer className="flex flex-col gap-14 bg-[#072C59] container-padding text-white font-plus-jakarta">
         {/* logo */}
-        <div className="mt-5">
-          <img src="/images/footer-logo.png" alt="" />
-        </div>
+        <div className="flex flex-col gap-6">
+          <div className="mt-5">
+            <img src="/images/footer-logo.png" alt="" />
+          </div>
+          <div>
+            <p className="text-[#9A9EA6]">
+              {showMore
+                ? "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, amet earum, veritatis ratione eum impedit esse qui in eveniet enim, iste unde laudantium ipsam sint libero accusantium minima consequatur aperiam dolor sit amet, consectetur adipisicing elit. Illo, amet earum, veritatis ratione eum impedit esse qui in eveniet enim, iste unde laudantium ipsam sint libero accusantium minima consequatur aperiam..."
+                : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo amet earum, veritatis ratione eum impedit esse qui in eveniet enim, iste unde laudantium ipsam sint libero accusantium minima consequatur aperiam..."}
+             
+              <button
+                className="text-[#DCECFF] ml-1"
+                onClick={() => setShowMore(!showMore)}
+              >
+                {showMore ? "Show Less" : "Read More"}
+              </button>
+            </p>
+          </div>
 
-        <div>
-          <p className="text-[#9A9EA6]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, amet
-            earum, veritatis ratione eum impedit esse qui in eveniet enim, iste
-            unde laudantium ipsam sint libero accusantium minima consequatur
-            aperiam...{" "}
-            <button
-              className="text-[#DCECFF]"
-              onClick={() => console.log("clicked")}
-            >
-              Read More
-            </button>
-          </p>
-        </div>
-
-        {/* contact */}
-        <div className="flex justify-between">
-          {contact.map((item, index) => (
-            <div key={index} className="flex items-start gap-3">
-              <img src={item.image} alt="" />
-              <div>
-                <p className="text-[#9A9EA6] text-[14px]">{item.title}</p>
-                <p className="w-48 text-[#DCECFF]">{item.meesage}</p>
+          {/* contact */}
+          <div className="flex justify-between">
+            {contact.map((item, index) => (
+              <div key={index} className="flex items-start gap-3">
+                <img src={item.image} alt="" />
+                <div>
+                  <p className="text-[#9A9EA6] text-[14px]">{item.title}</p>
+                  <p className="w-48 text-[#DCECFF]">{item.meesage}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* newsletter section */}
         <div className="flex p-7 rounded justify-between bg-[#157DFF]">
           <div>
-            <h3>Newsletter</h3>
-            <p>Be the first one to know about discounts, offers and events</p>
+            <h3 className="font-semibold text-[18px]">Newsletter</h3>
+            <p className="text-white/80">
+              Be the first one to know about discounts, offers and events
+            </p>
           </div>
 
           <div className="relative flex justify-between bg-[#072C59] p-2 w-[457px] rounded">
@@ -85,7 +92,7 @@ const Footer = () => {
         </div>
 
         {/* footer nav */}
-        <nav className="flex justify-between border-b-2 border-[#CCCCCC] py-20">
+        <nav className="flex justify-between">
           {/* car search */}
           <div className="flex flex-col gap-5">
             <h3 className="text-[20px] font-bold">Car Search</h3>
@@ -181,7 +188,7 @@ const Footer = () => {
           </div>
         </nav>
 
-        <p className="text-center text-[#CCCCCC] mb-10">
+        <p className="text-center text-[#CCCCCC] border-t border-[#CCCCCC] pt-6">
           &copy;2025, All Rights Reserved
         </p>
       </footer>

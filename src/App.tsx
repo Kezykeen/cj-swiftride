@@ -2,7 +2,7 @@ import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
-    <div className="flex w-[1440px] mx-auto">
+    <div className="flex w-full mx-auto">
       <LandingPage />
     </div>
   );

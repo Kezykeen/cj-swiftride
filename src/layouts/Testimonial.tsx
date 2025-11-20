@@ -1,5 +1,3 @@
-import TestimonialSubsection from "./TestimonialSubsection";
-
 const testimonialCard = [
   {
     image: "/images/testimonial-image.jpg",
@@ -25,22 +23,22 @@ const testimonialCard = [
 
 const Testimonial = () => {
   return (
-    <div className="flex flex-col items-center gap-6 py-20 pb-50">
-      {/* Icon */}
-      <div className="flex items-center justify-center">
-        <span className="text-blue-500 text-xl font-semibold font-plus-jakarta">
-          <p>Testimonials</p>
-        </span>
+    <div className="flex flex-col items-center gap-8 pt-[199px] py-20 pb-[91px]">
+      <div className="flex flex-col gap-4">
+        <div className="flex items-center justify-center">
+          <span className="text-blue-500 text-xl font-semibold font-plus-jakarta">
+            <p>Testimonials</p>
+          </span>
+        </div>
+        {/* Headings */}
+        <h2 className="text-[36px] font-semibold text-center font-plus-jakarta">
+          Over 1000+people trust us
+        </h2>
+        <p className="text-[#6B6B6B] text-[18px] text-center w-3xl font-medium font-plus-jakarta">
+          Clarity gives you the blocks & components you need to create a truly
+          professional website, landing page or admin panel for your SaaS.
+        </p>
       </div>
-
-      {/* Headings */}
-      <h2 className="text-[36px] font-semibold text-center font-plus-jakarta">
-        Over 1000+people trust us
-      </h2>
-      <p className="text-[#667085] text-[20px] text-center w-3xl font-plus-jakarta">
-        Clarity gives you the blocks & components you need to create a truly
-        professional website, landing page or admin panel for your SaaS.
-      </p>
 
       {/* testimonial card */}
       <div className="flex gap-5">
@@ -65,8 +63,6 @@ const Testimonial = () => {
           </div>
         ))}
       </div>
-
-      <TestimonialSubsection />
     </div>
   );
 };

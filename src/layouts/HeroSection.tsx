@@ -22,7 +22,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[840px] flex flex-col justify-center items-center overflow-hidden">
+    <div className="relative w-full h-[840px] flex flex-col justify-center items-center overflow-hidden font-plus-jakarta">
       {/* Background images */}
       {images.map((img, index) => (
         <div
@@ -41,14 +41,14 @@ const HeroSection = () => {
       <div className="relative flex flex-col items-center z-10 max-w-xl mx-auto mt-10 text-center text-white">
         <HeroCounter />
 
-        <div className="flex flex-col items-center my-4">
-          <p className="w-[821px] h-[100px] font-plus-jakarta font-bold text-[40px] leading-[100%] tracking-[0%] text-center">
+        <div className="flex flex-col gap-5 items-center my-3">
+          <p className="w-[821px] h-[100px] font-plus-jakarta font-bold text-[40px] leading-13 tracking-[0%] text-center">
             Your Trusted Partner for Buying, Paying & Shipping Cars from the
             U.S. and Beyond
           </p>
-          <p className="w-full max-w-[593px] text-center">
+          <p className="w-full px-35 text-center">
             Whether you're a dealer or an individual buyer, we help you handle
-            everything from payment to delivery, globally
+            everything from payment to delivery, globally.
           </p>
         </div>
 

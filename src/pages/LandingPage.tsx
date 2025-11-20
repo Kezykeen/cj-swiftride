@@ -10,10 +10,11 @@ import NavBar from "../layouts/NavBar"
 import Services from "../layouts/Services"
 import Stats from "../layouts/Stats"
 import Testimonial from "../layouts/Testimonial"
+import TestimonialSubsection from "../layouts/TestimonialSubsection"
 
 const LandingPage = () => {
   return (
-    <div className="w-full pb-[100px]">
+    <div className="w-full">
         <NavBar />
         <HeroSection />
         <HowItWorks />
@@ -22,6 +23,7 @@ const LandingPage = () => {
         <Stats />
         <DashboardPreview />
         <Testimonial />
+        <TestimonialSubsection />
         <CarBrand />
         <FAQs />
         <GetInTouch />

@@ -5,7 +5,9 @@ return (
   <div className="flex flex-col justify-center items-center p-20 gap-15">
     <div className="flex flex-col justify-center items-center gap-3">
       <p className="text-[#157DFF] text-[18px] font-semibold">How it works</p>
-      <p className="w-[553px] font-plus-jakarta font-bold text-[36px] leading-[100%] tracking-[0%] text-center">
+      <p className="w-[553px] font-plus-jakarta font-bold text-[36px] tracking-[0%] text-center" style={{
+        lineHeight: "44px"
+      }}>
         We make buying and shipping your car easy.
       </p>
     </div>

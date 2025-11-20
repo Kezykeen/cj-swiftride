@@ -31,10 +31,11 @@ const Stats: React.FC = () => {
       </p>
 
       {/* card */}
-      <div className="relative flex gap-20 mt-8">
+      <div className="relative flex justify-between w-full max-w-[850px] mt-8">
+
         {/* border line */}
-        <div className="absolute left-[33%] border border-gray-100 h-28"></div>
-        <div className="absolute left-[67%] border border-gray-100 h-28"></div>
+        <div className="absolute left-[31%] border border-gray-100 h-28"></div>
+        <div className="absolute left-[68%] border border-gray-100 h-28"></div>
 
         {stats.map((item) => (
           <div

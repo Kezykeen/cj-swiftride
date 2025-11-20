@@ -22,14 +22,14 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   // Base classes for all buttons
   const baseClasses =
-    "inline-flex items-center justify-center font-semibold rounded-full transition-colors duration-500 ease-in-out focus:outline-none py-[15px] px-[37px] cursor-pointer border";
+    "inline-flex items-center justify-center font-semibold rounded-full transition-colors duration-500 ease-in-out focus:outline-none py-[21px] px-[32px] cursor-pointer border text-[14px] font-plus-jakarta";
 
   // Variant-specific classes
   const variantClasses = {
     primary:
       "bg-white border text-[#072C59] hover:bg-[#072C59] hover:text-white",
     secondary:
-      "bg-[#072C59] text-white hover:bg-transparent  border-transparent hover:text-[#072C59] hover:border-[#072C59] px-[37px]",
+      "bg-[#072C59] text-white hover:bg-transparent border-transparent hover:text-[#072C59] hover:border-[#072C59] px-[37px]",
     danger: "bg-red-600 text-white hover:bg-red-700 focus:ring-red-500",
     outline:
       "border bg-transparent",

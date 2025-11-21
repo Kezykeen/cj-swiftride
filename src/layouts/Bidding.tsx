@@ -34,16 +34,15 @@ const biddingCard = [
 
 const Bidding = () => {
   return (
-    <div className="w-full px-[146px] py-30 font-plus-jakarta max-w-[1440px] mx-auto">
+    <div className="w-full px-[146px] py-[108px] font-plus-jakarta max-w-[1440px] mx-auto">
       {/* content */}
       <div className="flex flex-col gap-8">
-        
         <div className="flex justify-between items-center w-full">
-          <section className="flex flex-col w-2/3 gap-2">
-            <h3 className="w-full font-semibold text-[36px] tracking-[0%]">
+          <section className="flex flex-col w-2/3 gap-3">
+            <h3 className="w-full font-medium text-[36px] tracking-[0%]">
               Discover Cars Ready for Bidding
             </h3>
-            <p className="text-[#6B6B6B] font-medium">
+            <p className="text-[#6B6B6B] text-lg">
               Browse our curated collection of top-rated auction listings.
             </p>
           </section>
@@ -89,12 +88,13 @@ const Bidding = () => {
                   <img src="/images/bidding-mileage-icon.png" alt="" />
                   <p className="text-[12px]">{item.mileage}</p>
                 </div>
-                <div className="text-[#6B6B6B] text-[14px] font-semibold">{item.amount}</div>
+                <div className="text-[#6B6B6B] text-[14px] font-semibold">
+                  {item.amount}
+                </div>
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );

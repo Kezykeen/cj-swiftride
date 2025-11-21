@@ -66,7 +66,9 @@ const FAQsAccordion = () => {
               openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
             }`}
           >
-            <p className="text-[#667085] w-[720px] pb-4 leading-relaxed">{item.answer}</p>
+            <p className="text-[#667085] w-[720px] pb-8 leading-relaxed">
+              {item.answer}
+            </p>
           </div>
 
           <div className="w-full border-t border-gray-200"></div>

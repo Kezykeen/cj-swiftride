@@ -3,11 +3,14 @@ import Button from "../components/Button";
 
 const TestimonialSubsection = () => {
   return (
-    <div className="flex items-center pt-[108px] gap-20">
+    <div className="flex items-center pt-[108px] pb-[139px] gap-20">
       <div className="relative flex justify-end items-end gap-[60px] w-full max-w-[1148px] mx-auto">
-
         {/* car section */}
-        <img src="/images/testimonial-car.png" alt="" className="w-[671px] absolute left-[-12%]" />
+        <img
+          src="/images/testimonial-car.png"
+          alt=""
+          className="w-[671px] absolute left-[-12%]"
+        />
 
         {/* content section */}
         <section className="flex flex-col w-[561px] gap-6">
@@ -39,7 +42,7 @@ const TestimonialSubsection = () => {
               <Button
                 label="Learn more"
                 variant="outline"
-                className="text-black border-black"
+                className="text-black border-black mt-[7px]"
                 icon={<FiArrowUpRight />}
                 onClick={() => console.log("clicked")}
               />

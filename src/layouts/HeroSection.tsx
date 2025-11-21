@@ -22,7 +22,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[840px] flex flex-col justify-center items-center overflow-hidden font-plus-jakarta">
+    <div className="relative w-full min-h-[calc(100vh-94px)] h-[840px] flex flex-col justify-center items-center overflow-hidden font-plus-jakarta">
       {/* Background images */}
       {images.map((img, index) => (
         <div
@@ -41,7 +41,7 @@ const HeroSection = () => {
       <div className="relative flex flex-col items-center z-10 max-w-xl mx-auto mt-10 text-center text-white">
         <HeroCounter />
 
-        <div className="flex flex-col gap-5 items-center my-3">
+        <div className="flex flex-col gap-5 items-center my-8">
           <p className="w-[821px] h-[100px] font-plus-jakarta font-bold text-[40px] leading-13 tracking-[0%] text-center">
             Your Trusted Partner for Buying, Paying & Shipping Cars from the
             U.S. and Beyond
@@ -53,7 +53,7 @@ const HeroSection = () => {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex justify-center gap-4 mt-4">
+        <div className="flex justify-center gap-4">
           <Button
             label="Get Started"
             className="text-[#072C59] border-0"

@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const DashboardPreview: React.FC = () => {
   return (
-    <section className="relative w-full bg-[#0856B7]/87 flex justify-center">
+    <section className="relative w-full bg-[#073284]/87 flex justify-center">
       <div className="flex justify-center items-center w-full">
         <img
           src="/images/dashboard-preview-bg.jpg"

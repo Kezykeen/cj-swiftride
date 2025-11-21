@@ -8,50 +8,42 @@ const serviceCard = [
     message:
       "We help you find quality cars from trusted U.S. auction platforms like Copart, IAAI, and Manheim.",
     learn: "Learn more",
-    image: "/images/service-card1.jpg",
+    image: "/images/service-card1.png",
   },
   {
     id: 2,
-    header: "Car Sourcing and Auction",
+    header: "Zelle / CashApp Payment",
     message:
-      "We help you find quality cars from trusted U.S. auction platforms like Copart, IAAI, and Manheim.",
+      "Safely send funds to U.S. truckers or service partners using our trusted payment network.",
     learn: "Learn more",
-    image: "/images/service-card2.jpg",
+    image: "/images/service-card2.png",
   },
   {
     id: 3,
-    header: "Car Sourcing and Auction",
+    header: "Buy Cars in Nigeria",
     message:
-      "We help you find quality cars from trusted U.S. auction platforms like Copart, IAAI, and Manheim.",
+      "Browse verified cars already in Nigeria — inspected, documented, and ready to drive.",
     learn: "Learn more",
     image: "/images/service-card3.png",
   },
   {
     id: 4,
-    header: "Car Sourcing and Auction",
+    header: "Shipping and Delivery",
     message:
-      "We help you find quality cars from trusted U.S. auction platforms like Copart, IAAI, and Manheim.",
+      "From port handling and customs clearance to documentation and nationwide delivery.",
     learn: "Learn more",
-    image: "/images/service-card4.jpg",
-  },
-  {
-    id: 5,
-    header: "Car Sourcing and Auction",
-    message:
-      "We help you find quality cars from trusted U.S. auction platforms like Copart, IAAI, and Manheim.",
-    learn: "Learn more",
-    image: "/images/service-card4.jpg",
+    image: "/images/service-card4.png",
   },
 ];
 
 const Services = () => {
   return (
-    <div className="flex flex-col bg-[#F6F6F6] w-full px-[146px] gap-20 pb-20 justify-center items-center cursor-pointer">
+    <div className="flex flex-col bg-[#F6F6F6] w-full px-[146px] gap-20 pb-[50px] justify-center items-center cursor-pointer">
       <div className="w-full max-w-[1148px]">
         {/* content */}
-        <div className="flex justify-between items-end w-full py-10">
+        <div className="flex justify-between items-end w-full pt-[50px] pb-12">
           <section className="flex flex-col gap-4 w-[50%]">
-            <p className="text-[#157DFF] text-[18px] font-plus-jakarta font-semibold">
+            <p className="text-[#157DFF] text-[18px] font-plus-jakarta font-medium">
               Our Services
             </p>
             <p className="w-[553px] font-plus-jakarta font-semibold text-[36px] leading-[120%] tracking-[0%]">
@@ -72,16 +64,16 @@ const Services = () => {
           {serviceCard.map((item) => (
             <div
               key={item.id}
-              className="group hover:text-white hover:bg-[#157DFF] relative flex flex-col p-5 gap-6 justify-center h-[465px] w-[347px] bg-white rounded-xl overflow-hidden shrink-0"
+              className="group hover:text-white hover:bg-[#157DFF] transition-colors duration-300 relative flex flex-col px-4 py-[25px] gap-4 justify-center h-[465px] w-[347px] bg-white rounded-xl overflow-hidden shrink-0"
             >
-              {/* positioned rectangle */}
-              <div className="absolute w-[312px] h-[210px] bg-white group-hover:bg-[#157DFF] rotate-[-46.98deg] top-[75%] left-45"></div>
-
               <h3 className="font-medium text-[20px]">{item.header}</h3>
-              <p className="text-[16px] text-[#6B6B6B] group-hover:text-white group-hover: font-medium">
+              <p className="text-[16px] h-[93px] leading-[31px] text-[#6B6B6B] group-hover:text-white">
                 {item.message}
               </p>
-              <Link to="/" className="underline font-semibold text-[16px]">
+              <Link
+                to="/"
+                className="underline font-semibold text-[16px] leading-[31px]"
+              >
                 {item.learn}
               </Link>
 

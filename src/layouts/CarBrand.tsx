@@ -76,7 +76,6 @@ const brand = [
 const CarBrand = () => {
   return (
     <div className="flex flex-col gap-5 bg-[#F6F6F6] font-plus-jakarta w-full px-[146px] py-[61px]">
-
       <div className="flex flex-col gap-8 w-full max-w-[1148px] mx-auto">
         <div>
           <h3 className="font-plus-jakarta text-[36px] font-semibold text-[#101828]">
@@ -87,7 +86,7 @@ const CarBrand = () => {
           {brand.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col justify-center items-center rounded-xl gap-2 w-40 h-[153px] bg-white shadow hover:shadow-2xl"
+              className="flex flex-col justify-center items-center rounded-xl gap-2 w-40 h-[153px] bg-white shadow hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
             >
               <div className="flex justify-center items-center bg-[#F6F6F6] h-[67px] w-[67px] rounded-full p-2">
                 <img src={item.image} alt="" />
@@ -99,6 +98,6 @@ const CarBrand = () => {
       </div>
     </div>
   );
-}
+};
 
-export default CarBrand
+export default CarBrand;

@@ -1,5 +1,5 @@
 import { FiArrowUpRight } from "react-icons/fi";
-import Button from "../components/Button";
+import Button from "../../../components/Button";
 
 const biddingCard = [
   {

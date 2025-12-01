@@ -1,8 +1,11 @@
-import FAQsAccordion from "../components/FAQsAccordion";
+import FAQsAccordion from "./FAQsAccordion";
 
 const FAQs = () => {
   return (
-    <div className="flex flex-col gap-20 w-full max-w-3xl mx-auto px-[] font-plus-jakarta pt-40 ">
+    <div
+      id="faq"
+      className="flex flex-col gap-20 w-full max-w-3xl mx-auto font-plus-jakarta pt-40 "
+    >
       <div className="flex flex-col items-center gap-5">
         <h3 className="capitalize text-[36px] font-semibold">
           frequently asked questions

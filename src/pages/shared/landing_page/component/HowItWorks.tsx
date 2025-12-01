@@ -1,4 +1,4 @@
-import { HowItWorksCard } from "../components/Card";
+import { HowItWorksCard } from "../../../../components/Card";
 
 const HowItWorks = () => {
   return (

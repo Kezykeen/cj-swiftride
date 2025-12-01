@@ -16,6 +16,17 @@ module.exports = {
         plusJakarta: ["Plus Jakarta Sans", "sans-serif"],
         syne: ["Syne", "sans-serif"],
       },
+      extend: {
+        animation: {
+          "scroll-x": "scroll-x 40s linear infinite",
+        },
+        keyframes: {
+          "scroll-x": {
+            from: { transform: "translateX(0)" },
+            to: { transform: "translateX(calc(-100% - 1.25rem))" },
+          },
+        },
+      },
     },
   },
   plugins: [],

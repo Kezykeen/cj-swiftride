@@ -5,32 +5,31 @@ const contact = [
   {
     image: "/images/footer-phone-icon.png",
     title: "Tel",
-    meesage: "310-437-2766"
+    meesage: "310-437-2766",
   },
   {
     image: "/images/footer-mail-icon.png",
     title: "Mail",
-    meesage: "unreal@outlook.com"
+    meesage: "unreal@outlook.com",
   },
   {
     image: "/images/footer-location-icon.png",
     title: "Address",
-    meesage: "706 Campfire Ave. Meriden, CT06450"
+    meesage: "706 Campfire Ave. Meriden, CT06450",
   },
   {
     image: "/images/footer-fax-icon.png",
     title: "Fax",
-    meesage: "+1-000-0000"
+    meesage: "+1-000-0000",
   },
-]
+];
 
 const Footer = () => {
   const [showMore, setShowMore] = useState(false);
 
-
   return (
-    <div>
-      <footer className="flex flex-col gap-14 bg-[#072C59] container-padding text-white font-plus-jakarta">
+    <div className="bg-[#072C59]">
+      <footer className="flex flex-col gap-14 w-full max-w-[1440px] mx-auto container-padding text-white font-plus-jakarta">
         {/* logo */}
         <div className="flex flex-col gap-6">
           <div className="mt-5">
@@ -41,7 +40,7 @@ const Footer = () => {
               {showMore
                 ? "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, amet earum, veritatis ratione eum impedit esse qui in eveniet enim, iste unde laudantium ipsam sint libero accusantium minima consequatur aperiam dolor sit amet, consectetur adipisicing elit. Illo, amet earum, veritatis ratione eum impedit esse qui in eveniet enim, iste unde laudantium ipsam sint libero accusantium minima consequatur aperiam..."
                 : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo amet earum, veritatis ratione eum impedit esse qui in eveniet enim, iste unde laudantium ipsam sint libero accusantium minima consequatur aperiam..."}
-             
+
               <button
                 className="text-[#DCECFF] ml-1"
                 onClick={() => setShowMore(!showMore)}
@@ -194,6 +193,6 @@ const Footer = () => {
       </footer>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;

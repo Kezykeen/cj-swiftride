@@ -66,7 +66,7 @@ const SignIn = () => {
 
           <button
             onClick={() => handleSubmit()}
-            className="bg-[#072C59] text-white text-[14px] font-plus-jakarta w-full py-[17px] rounded-xl"
+            className="bg-[#072C59] text-white text-[14px] cursor-pointer font-plus-jakarta w-full py-[17px] rounded-xl"
           >
             <p>Sign in</p>
           </button>

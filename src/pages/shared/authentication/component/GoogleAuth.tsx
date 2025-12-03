@@ -1,6 +1,6 @@
 const GoogleAuth = () => {
   return (
-    <button className="flex justify-center items-center gap-2.5 w-full py-4 border border-[#E2E2E2] rounded-xl font-plus-jakarta">
+    <button className="flex justify-center items-center cursor-pointer gap-2.5 w-full py-4 border border-[#E2E2E2] rounded-xl font-plus-jakarta">
       <img
         src="/images/auth/google-icon.webp"
         alt="a google icon"

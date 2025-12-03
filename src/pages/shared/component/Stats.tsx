@@ -22,13 +22,15 @@ const Stats: React.FC = () => {
       </div>
 
       {/* Headings */}
-      <h2 className="text-[36px] font-semibold text-center">
-        Driven by Trust. Proven by Numbers.
-      </h2>
-      <p className="text-[#667085] text-[20px] leading-[30px] text-center w-3xl">
-        Every car we source, ship, and deliver adds to our growing record of
-        trust and customer satisfaction.
-      </p>
+      <div className=" flex flex-col gap-4">
+        <h2 className="text-[36px] font-semibold text-center ">
+          Driven by Trust. Proven by Numbers.
+        </h2>
+        <p className="text-[#667085]  text-[20px] leading-[30px] text-center w-3xl">
+          Every car we source, ship, and deliver adds to our growing record of
+          trust and customer satisfaction.
+        </p>
+      </div>
 
       {/* card */}
       <div className="relative flex justify-between w-full max-w-[850px] mt-9">

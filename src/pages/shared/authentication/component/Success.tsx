@@ -30,7 +30,7 @@ const Success = () => {
         <div className="mt-6">
           <button
             onClick={() => handleSubmit()}
-            className="bg-[#072C59] text-white text-[14px] font-plus-jakarta capitalize w-full py-[17px] rounded-xl"
+            className="bg-[#072C59] text-white text-[14px] cursor-pointer font-plus-jakarta capitalize w-full py-[17px] rounded-xl"
           >
             <p>continue to dashboard</p>
           </button>

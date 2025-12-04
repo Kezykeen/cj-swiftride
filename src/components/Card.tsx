@@ -1,5 +1,5 @@
 import type { VariantProps } from "class-variance-authority";
-import { cardVariants } from "../types/card";
+import { cardVariants } from "../types/.ts";
 
 interface CardProps extends VariantProps<typeof cardVariants> {
   image: string;

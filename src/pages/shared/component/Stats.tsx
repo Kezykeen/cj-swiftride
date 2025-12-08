@@ -1,4 +1,4 @@
-import CountUpOnView from "../landing_page/component/CountUpOnView";
+import CountUpOnView from "../landingPage/component/CountUpOnView";
 
 interface StatItem {
   value: number;

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import Button from "../../../components/Button";
-import HeroCounter from "../landing_page/component/HeroCounter";
+import HeroCounter from "../landingPage/component/HeroCounter";
 
 const images = [
   "/images/hero-car-bg1.png",
